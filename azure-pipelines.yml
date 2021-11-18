@@ -9,4 +9,5 @@ trigger:
 pool: cusmridev
 
 steps:
-- script: echo $(Agent.Name) >> agentdevops.txt //output Agent Name
+- script: echo $(Agent.Name) >> agentdevops.txt //output Agent Name |
+          echo $(Agent.Version) >> agentdevops.txt //output Agent Version
